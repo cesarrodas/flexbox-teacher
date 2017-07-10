@@ -23,9 +23,8 @@ document.getElementById('next').onclick = function nextPage () {
 }
 
 ipcRenderer.on('page', (event, props) => {
-  //img = `<img class="instruction" src="./images/flexbox_${props.count}.png" />`;
-  //document.getElementById('instruct').innerHTML = img;
-  render(props.count);
+  page = props.count;
+  render(page);
 });
 
 render(1);
