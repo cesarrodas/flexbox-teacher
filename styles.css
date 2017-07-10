@@ -11,3 +11,30 @@ body {
 .instruction {
   width: 100%;
 }
+
+#back, #next {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#back:hover, #next:hover {
+  opacity: 0.2;
+}
+
+#back {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+#next {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
