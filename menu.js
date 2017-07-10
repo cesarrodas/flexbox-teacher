@@ -6,6 +6,10 @@ module.exports = {
 
 function setMainMenu(mainWindow) {
 
+  function pageSender (page) {
+    mainWindow.webContents.send('page', { count: page });
+  }
+
   let template = [
     {
       label: 'Index',
@@ -13,61 +17,61 @@ function setMainMenu(mainWindow) {
         {
           label: 'basic setup',
           click() {
-
+            pageSender(1);
           }
         },
         {
           label: 'flex direction',
           click() {
-
+            pageSender(2);
           }
         },
         {
           label: 'justify content',
           click() {
-
+            pageSender(3);
           }
         },
         {
           label: 'wrapping',
           click() {
-
+            pageSender(4);
           }
         },
         {
           label: 'aligning items',
           click() {
-
+            pageSender(5);
           }
         },
         {
           label: 'aligning content',
           click() {
-
+            pageSender(6);
           }
         },
         {
           label: 'changing order',
           click() {
-
+            pageSender(7);
           }
         },
         {
           label: 'grow',
           click() {
-
+            pageSender(8);
           }
         },
         {
           label: 'aligning specified',
           click() {
-
+            pageSender(9);
           }
         },
         {
           label: 'credit',
           click() {
-            
+            pageSender(10);
           }
         }
       ]

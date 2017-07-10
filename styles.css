@@ -1,0 +1,13 @@
+body {
+  background-color: #FCFAFA;
+}
+
+#instruct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instruction {
+  width: 100%;
+}

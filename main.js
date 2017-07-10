@@ -11,5 +11,6 @@ app.on('ready', () => {
   mainWindow.on('ready-to-show', () => {
     setMainMenu(mainWindow);
     mainWindow.show();
+    mainWindow.webContents.openDevTools();
   });
 });
